@@ -19,7 +19,7 @@ const HomeView = () => {
               <div className="h-full w-full my-10 pr-10 border border-l-0 border-t-0 border-b-0">
                 <WLAFormView />
               </div>
-              <div className="h-full w-full my-10 px-10 ">
+              <div className="h-full w-full my-10 pl-10 ">
                 <WLCFormView />
               </div>
             </div>
