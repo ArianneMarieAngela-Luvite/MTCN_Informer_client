@@ -14,6 +14,7 @@ const WLCFormView = () => {
     isLoading,
     error,
     fetchPrediction,
+    getPredictionColor,
   } = useWLCController();
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -73,7 +74,7 @@ const WLCFormView = () => {
               Prediction Results: {predicted !== null ? `${predicted}` : "No prediction yet"}
             </div>
             <div className="flex flex-col">
-              <div className="w-full h-[10px] rounded-xl bg-blue-800"></div>
+            <div className={`w-full h-[10px] rounded-xl ${getPredictionColor(predicted)}`}></div>
               <div className="flex flex-row">
                 <div className="flex flex-row justify-center pt-2 gap-5 text-[13px] w-full text-black">
                   <div className="flex flex-row gap-2">

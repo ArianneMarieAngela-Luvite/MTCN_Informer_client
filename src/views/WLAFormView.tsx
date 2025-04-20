@@ -76,20 +76,24 @@ const WLCFormView = () => {
               <div className="w-full h-[10px] rounded-xl bg-blue-800"></div>
               <div className="flex flex-row">
                 <div className="flex flex-row justify-center pt-2 gap-5 text-[13px] w-full text-black">
-                  <div className="flex flex-row gap-2">
-                    <img src={waterBlue} className="w-[20px] rounded-lg" />
+                  <div className="flex flex-row justify-center items-center gap-2">
+                    {/* <img src={waterBlue} className="w-[20px] rounded-lg" /> */}
+                    <div className="w-[10px] h-[10px] bg-blue-800"></div>
                     <div>Waterlevel</div>
                   </div>
-                  <div className="flex flex-row gap-2">
-                    <img src={waterYellow} className="w-[20px] rounded-lg" />
+                  <div className="flex flex-row justify-center items-center gap-2">
+                    {/* <img src={waterYellow} className="w-[20px] rounded-lg" /> */}
+                    <div className="w-[10px] h-[10px] bg-yellow-300"></div>
                     <div>Alertwl</div>
                   </div>
-                  <div className="flex flex-row gap-2">
-                    <img src={waterBrown} className="w-[20px] rounded-lg" />
+                  <div className="flex flex-row justify-center items-center gap-2">
+                    {/* <img src={waterBrown} className="w-[20px] rounded-lg" /> */}
+                    <div className="w-[10px] h-[10px] bg-yellow-800"></div>
                     <div>Alarmwl</div>
                   </div>
-                  <div className="flex flex-row gap-2">
-                    <img src={waterRed} className="w-[20px] rounded-lg" />
+                  <div className="flex flex-row justify-center items-center gap-2">
+                    {/* <img src={waterRed} className="w-[20px] rounded-lg" /> */}
+                    <div className="w-[10px] h-[10px] bg-red-700"></div>
                     <div>Criticalwl</div>
                   </div>
                 </div>
