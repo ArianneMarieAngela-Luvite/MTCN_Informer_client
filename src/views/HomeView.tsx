@@ -10,8 +10,7 @@ const HomeView = () => {
         <div className="w-full">
             <h1 className="text-white text-center font-bold text-4xl mb-4 pt-5">Water Level Prediction</h1>
             <p className="w-full text-center px-10 pb-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+            Leverage advanced machine learning models to accurately predict future water levels based on recent rainfalls. This system improves disaster risk management, and empowers communities and local authorities to make informed decisions for preparedness, response, and mitigation efforts.
             </p>
             <hr className="text-white " />
             {/* file uploads */}
