@@ -31,12 +31,6 @@ const WLAFormView = () => {
     }
   };
 
-  const truncateFileName = (name: string) => {
-    const maxLength = 15;
-    return name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
-  };
-
-
   return (
     <div>
       <div className="flex flex-col gap-8 p-13 justify-center h-[500px] w-full rounded-2xl bg-[#bac3d0]">
@@ -57,7 +51,7 @@ const WLAFormView = () => {
                 />
               </label>
               <span className="px-4 py-2 text-sm text-gray-700 truncate">
-                {fileName ? truncateFileName(fileName) : "No chosen file"}
+                {fileName}
               </span>
             </div>
             <button

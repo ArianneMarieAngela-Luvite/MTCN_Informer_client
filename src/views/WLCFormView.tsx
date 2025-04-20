@@ -31,10 +31,7 @@ const WLCFormView = () => {
     }
   };
 
-  const truncateFileName = (name: string) => {
-    const maxLength = 15;
-    return name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
-  };
+  
 
   return (
     <div>
@@ -56,7 +53,7 @@ const WLCFormView = () => {
                 />
               </label>
               <span className="px-4 py-2 text-sm text-gray-700 truncate">
-                {fileName ? truncateFileName(fileName) : "No file chosen"}
+                {fileName}
               </span>
             </div>
             <button
