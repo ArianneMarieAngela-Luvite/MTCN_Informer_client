@@ -15,7 +15,7 @@ const useWLAController = () => {
       setError(null);
 
       const response = await axios.post(
-        "https://wl-a-model-api-64b29fb30a1f.herokuapp.com/predict/wl-a/",
+        "https://wl-a-model-api-64b29fb30a1f.herokuapp.com/predict/wl-a",
         formData,
         {
           headers: {
