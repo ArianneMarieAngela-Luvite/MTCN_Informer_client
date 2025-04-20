@@ -24,7 +24,7 @@ const useWLAController = () => {
         }
       );
 
-      const predictedValue = response.data["wl-c_predicted"];
+      const predictedValue = response.data["wl-a_predicted"];
       setPredicted(predictedValue);
     } catch (err) {
       console.error(err);
