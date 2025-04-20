@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useWLAController from "../controller/useWLAController";
+import useWLAController from "../controller/useWLCController";
 import waterBlue from "../assets/blue.png";
 import waterRed from "../assets/red.png";
 import waterYellow from "../assets/yellow.png";
@@ -36,7 +36,7 @@ const WLCFormView = () => {
 
         <div className="grid w-full items-center gap-1.5">
           <label className="block text-lg font-medium text-[#0a234c] mb-3">
-            Water Level - A
+            Water Level - C
           </label>
           <div className="flex flex-row gap-2">
             <div className="flex w-5/6 items-center rounded-xl border bg-white border-[#0a234c] shadow-sm overflow-hidden">
@@ -76,24 +76,20 @@ const WLCFormView = () => {
               <div className="w-full h-[10px] rounded-xl bg-blue-800"></div>
               <div className="flex flex-row">
                 <div className="flex flex-row justify-center pt-2 gap-5 text-[13px] w-full text-black">
-                  <div className="flex flex-row justify-center items-center gap-2">
-                    {/* <img src={waterBlue} className="w-[20px] rounded-lg" /> */}
-                    <div className="w-[10px] h-[10px] bg-blue-800"></div>
+                  <div className="flex flex-row gap-2">
+                    <img src={waterBlue} className="w-[20px] rounded-lg" />
                     <div>Waterlevel</div>
                   </div>
-                  <div className="flex flex-row justify-center items-center gap-2">
-                    {/* <img src={waterYellow} className="w-[20px] rounded-lg" /> */}
-                    <div className="w-[10px] h-[10px] bg-yellow-300"></div>
+                  <div className="flex flex-row gap-2">
+                    <img src={waterYellow} className="w-[20px] rounded-lg" />
                     <div>Alertwl</div>
                   </div>
-                  <div className="flex flex-row justify-center items-center gap-2">
-                    {/* <img src={waterBrown} className="w-[20px] rounded-lg" /> */}
-                    <div className="w-[10px] h-[10px] bg-yellow-800"></div>
+                  <div className="flex flex-row gap-2">
+                    <img src={waterBrown} className="w-[20px] rounded-lg" />
                     <div>Alarmwl</div>
                   </div>
-                  <div className="flex flex-row justify-center items-center gap-2">
-                    {/* <img src={waterRed} className="w-[20px] rounded-lg" /> */}
-                    <div className="w-[10px] h-[10px] bg-red-700"></div>
+                  <div className="flex flex-row gap-2">
+                    <img src={waterRed} className="w-[20px] rounded-lg" />
                     <div>Criticalwl</div>
                   </div>
                 </div>
