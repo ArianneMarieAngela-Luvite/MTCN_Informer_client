@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const WLCController = () => {
+const useWLCController = () => {
   const [predicted, setPredicted] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -42,4 +42,4 @@ const WLCController = () => {
   };
 };
 
-export default WLCController;
+export default useWLCController;

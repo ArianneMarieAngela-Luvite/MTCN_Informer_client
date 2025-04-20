@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useWLCController from "../controller/WLCCOntroller";
+import useWLCController from "../controller/useWLCController";
 import waterBlue from "../assets/blue.png";
 import waterRed from "../assets/red.png";
 import waterYellow from "../assets/yellow.png";
