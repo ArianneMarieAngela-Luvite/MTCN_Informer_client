@@ -1,11 +1,11 @@
 import { useState } from "react";
-import useWLAController from "../controller/useWLCController";
+import useWLAController from "../controller/useWLAController";
 import waterBlue from "../assets/blue.png";
 import waterRed from "../assets/red.png";
 import waterYellow from "../assets/yellow.png";
 import waterBrown from "../assets/brown.png";
 
-const WLCFormView = () => {
+const WLAFormView = () => {
   const [fileName, setFileName] = useState<string>('No file chosen');
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
@@ -14,6 +14,7 @@ const WLCFormView = () => {
     isLoading,
     error,
     fetchPrediction,
+    getPredictionColor,
   } = useWLAController();
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,7 +37,7 @@ const WLCFormView = () => {
 
         <div className="grid w-full items-center gap-1.5">
           <label className="block text-lg font-medium text-[#0a234c] mb-3">
-            Water Level - C
+            Water Level - A
           </label>
           <div className="flex flex-row gap-2">
             <div className="flex w-5/6 items-center rounded-xl border bg-white border-[#0a234c] shadow-sm overflow-hidden">
@@ -44,7 +45,7 @@ const WLCFormView = () => {
                 Choose File
                 <input
                   type="file"
-                  accept=".xls, .xlsx, .csv"
+                  accept=".xlsx"
                   onChange={handleFileChange}
                   className="hidden"
                 />
@@ -62,7 +63,7 @@ const WLCFormView = () => {
             </button>
           </div>
           <p className="text-xs text-gray-500 mt-1">
-            EXCEL or CSV files only.
+            EXCEL files only.
           </p>
           {error && <p className="text-xs text-red-600 mt-1">{error}</p>}
         </div>
@@ -73,7 +74,7 @@ const WLCFormView = () => {
               Prediction Results: {predicted !== null ? `${predicted}` : "No prediction yet"}
             </div>
             <div className="flex flex-col">
-              <div className="w-full h-[10px] rounded-xl bg-blue-800"></div>
+            <div className={`w-full h-[10px] rounded-xl ${getPredictionColor(predicted)}`}></div>
               <div className="flex flex-row">
                 <div className="flex flex-row justify-center pt-2 gap-5 text-[13px] w-full text-black">
                   <div className="flex flex-row gap-2">
@@ -102,4 +103,4 @@ const WLCFormView = () => {
   );
 };
 
-export default WLCFormView;
+export default WLAFormView;

@@ -45,7 +45,7 @@ const WLCFormView = () => {
                 Choose File
                 <input
                   type="file"
-                  accept=".xls, .xlsx, .csv"
+                  accept=".xlsx"
                   onChange={handleFileChange}
                   className="hidden"
                 />
@@ -63,7 +63,7 @@ const WLCFormView = () => {
             </button>
           </div>
           <p className="text-xs text-gray-500 mt-1">
-            EXCEL or CSV files only.
+            EXCEL files only.
           </p>
           {error && <p className="text-xs text-red-600 mt-1">{error}</p>}
         </div>
