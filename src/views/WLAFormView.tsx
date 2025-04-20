@@ -1,8 +1,8 @@
 import { useState } from "react";
-import waterBlue from "../assets/blue.png"
-import waterRed from "../assets/red.png"
-import waterYellow from "../assets/yellow.png"
-import waterBrown from "../assets/brown.png"
+// import waterBlue from "../assets/blue.png"
+// import waterRed from "../assets/red.png"
+// import waterYellow from "../assets/yellow.png"
+// import waterBrown from "../assets/brown.png"
 const WLAFormView = () => {
 
 const [fileName, setFileName] = useState<string>('No file chosen');
