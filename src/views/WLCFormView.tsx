@@ -32,7 +32,7 @@ const WLCFormView = () => {
   };
 
   const truncateFileName = (name: string) => {
-    const maxLength = 20;
+    const maxLength = 15;
     return name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
   };
 
