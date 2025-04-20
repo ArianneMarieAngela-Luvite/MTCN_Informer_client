@@ -34,11 +34,22 @@ const useWLCController = () => {
     }
   };
 
+  const getPredictionColor = (value: number | null) => {
+    if (value === null) return "bg-gray-300"; 
+    if (value <= 2.329) return "bg-[#0739FE]";
+    if (value <= 2.9) return "bg-[#FEEE07]";
+    if (value <= 3.5) return "bg-[#8C8633]";
+    if (value <= 4.1) return "bg-[#DC0707]";
+    return "bg-gray-300"; 
+  };
+  
+
   return {
     predicted,
     isLoading,
     error,
     fetchPrediction,
+    getPredictionColor,
   };
 };
 
